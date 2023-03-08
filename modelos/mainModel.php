@@ -6,8 +6,8 @@ if ($peticionAjax) {
     require_once "./config/SERVER.php";
 }
 
-class mainModel
-{
+class mainModel{
+    
     /* ------Función para conectar a BD ------------*/
     protected static function conectar()
     {
@@ -56,12 +56,11 @@ class mainModel
             $letra .= $aleatorio;
         }
         return $letra . "-" . $numero;
-    }
+    }       
 
 
     /* ------- Limpiar cadenas --------*/
-    protected static function limpiar_cadena($cadena)
-    {
+    protected static function limpiar_cadena($cadena){
         $cadena = trim($cadena);
         $cadena = stripslashes($cadena);
         $cadena = str_ireplace("<script>", "", $cadena);
@@ -116,6 +115,7 @@ class mainModel
     }
 
 
+    
     /* ------- Paginador de tablas --------*/
     protected static function paginador_tablas($pagina, $Npaginas, $url, $botones)
     {

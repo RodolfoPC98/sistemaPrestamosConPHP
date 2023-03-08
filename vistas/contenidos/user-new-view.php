@@ -21,8 +21,9 @@
 	</ul>	
 </div>
 
+<!-------------- Aquí comienza el contenido del formulario --------------->
 <div class="container-fluid">
-	<form action="" class="form-neon" autocomplete="off">
+	<form class="form-neon FormularioAjax" action="<?php echo SERVERURL; ?>ajax/usuarioAjax.php" method="POST" data-form="save" autocomplete="off">
 		<fieldset>
 			<legend><i class="far fa-address-card"></i> &nbsp; Información personal</legend>
 			<div class="container-fluid">
@@ -30,7 +31,7 @@
 					<div class="col-12 col-md-4">
 						<div class="form-group">
 							<label for="usuario_dni" class="bmd-label-floating">DNI</label>
-							<input type="text" pattern="[0-9-]{1,20}" class="form-control" name="usuario_dni_reg" id="usuario_dni" maxlength="20">
+							<input type="text" pattern="[0-9-]{10,20}" class="form-control" name="usuario_dni_reg" id="usuario_dni" maxlength="20">
 						</div>
 					</div>
 					
