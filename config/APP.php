@@ -1,8 +1,8 @@
 <?php
-const SERVERURL="http://localhost/www/php-sistemaPrestamo/";
+	const SERVERURL="http://localhost/www/php-sistemaPrestamo/";
 
-const COMPANY="Sistema Prestamos";
+	const COMPANY="SISTEMAS PRESTAMOS";
 
-const MONEDA="$";
+	const MONEDA="$";
 
-date_default_timezone_set("America/Mexico_City");
+	date_default_timezone_set("America/El_Salvador");
